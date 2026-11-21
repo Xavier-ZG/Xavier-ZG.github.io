@@ -1,0 +1,95 @@
+cv:
+  name: Guangxin Zhao
+  label: Ph.D. Student in Electrical Engineering, University of Notre Dame
+  email: gzhao23@nd.edu
+  location: Notre Dame, IN, United States
+  image: ""
+  summary: My research focuses on trustworthy and human-centered AI for healthcare, with an emphasis on developing intelligent conversational agents that provide reliable, personalized, and context-aware support in high-stakes care settings.
+
+  social_networks:
+    - network: GitHub
+      username: Xavier-Z713
+    - network: LinkedIn
+      username: guangxin-zhao-811623389
+
+  sections:
+    Education:
+      - institution: University of Notre Dame
+        location: Notre Dame, IN, United States
+        url: https://www.nd.edu/
+        area: Electrical and Electronics Engineering
+        studyType: Ph.D.
+        start_date: 2025-08
+        highlights:
+          - "Advisor: Dr. Zhi Zheng"
+
+      - institution: Imperial College London
+        location: London, United Kingdom
+        url: https://www.imperial.ac.uk/
+        area: Communications and Signal Processing
+        studyType: M.Sc. (Distinction)
+        start_date: 2024-09
+        end_date: 2025-09
+        highlights:
+          - "Advisor: Dr. Chen Qin"
+
+      - institution: University of Birmingham
+        location: Birmingham, United Kingdom
+        url: https://www.birmingham.ac.uk/
+        area: Electronic and Electrical Engineering
+        studyType: B.Eng. (First Class Honours)
+        start_date: 2022-09
+        end_date: 2024-06
+        highlights:
+          - "GPA: 4.25/4.25"
+
+      - institution: University of Electronic Science and Technology of China (UESTC)
+        location: Chengdu, China
+        url: https://en.uestc.edu.cn/
+        area: Photoelectric Science and Engineering
+        studyType: B.Eng.
+        start_date: 2020-09
+        end_date: 2024-06
+        highlights:
+          - "GPA: 3.85/4.00"
+
+    Experience:
+      - company: The Intelligent Interaction Research (I²R) Lab, University of Notre Dame
+        position: Graduate Research Assistant (Advisor - Dr. Zhi Zheng)
+        location: Notre Dame, IN, United States
+        start_date: 2025-08
+        summary: Developing agent-based conversational AI systems for dementia caregiver support, focusing on reliable response generation, personalized interaction, and context-aware assistance in healthcare settings.
+
+      - company: Indiana University School of Medicine
+        position: Affiliated Researcher
+        location: Indianapolis, IN, United States
+        start_date: 2026-03
+
+      - company: Imperial College London
+        position: MSc Dissertation Researcher (Advisor - Dr. Chen Qin)
+        location: London, United Kingdom
+        start_date: 2024-12
+        end_date: 2025-09
+        summary: Developed a diffusion-model-based framework for blind multi-coil MRI reconstruction, jointly optimizing latent representations and unknown k-space sampling masks to recover high-quality images from undersampled MR measurements.
+
+      - company: SCLEAD
+        position: Research Assistant Intern
+        start_date: 2023-06
+        end_date: 2023-07
+        highlights:
+          - Fine-tuned a CycleMorph model on simulated and real astronomical images by optimizing model parameters.
+          - Evaluated registration/reconstruction performance using SSIM and MSE to assess accuracy and generalization.
+
+    Honors and Awards:
+      - title: UESTC Excellent Student Scholarship
+        date: 2022-06
+        awarder: University of Electronic Science and Technology of China
+
+    Conference Presentations:
+      - bullet: "**[Oral]** Blind Multi-coil MRI Reconstruction Through Joint Optimization with the Diffusion Model. *2026 International Conference on Pattern Recognition (ICPR)*."
+
+    Academic Service:
+      - label: Journal Reviewer
+        details: IEEE Journal of Biomedical and Health Informatics (JBHI)
+      - label: Conference Reviewer
+        details: IEEE RO-MAN 2026; ACL Rolling Review (ARR), May 2026 Cycle
