@@ -18,7 +18,6 @@ layout: default
   .profile-icons a:hover i::before {
     color: var(--global-theme-color);
   }
-  /* 邮箱下划线不在 g 这类字母处断开 */
   .profile .more-info a {
     text-decoration-skip-ink: none;
   }
@@ -53,7 +52,6 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        <!-- 照片下方的图标：CV / Google Scholar / LinkedIn -->
         <div class="profile-icons">
           <a href="{{ site.data.socials.cv_pdf | relative_url }}" title="CV"><i class="ai ai-cv"></i></a>
           <a

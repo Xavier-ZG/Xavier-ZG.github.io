@@ -195,7 +195,6 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% comment %} 不显示月份和年份，只显示期刊/会议名 {% endcomment %}
     {% capture periodical %}{{ entrytype }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}

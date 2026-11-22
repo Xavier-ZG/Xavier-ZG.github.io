@@ -6,7 +6,6 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md：按 CV 的分类显示论文，每类内部按 papers.bib 里的顺序排列 -->
 
 <div class="publications">
 
