@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
 subtitle: Ph.D. Student in Electrical Engineering · <a href='https://www.nd.edu/'>University of Notre Dame</a>
 

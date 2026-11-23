@@ -1,95 +1,95 @@
-cv:
-  name: Guangxin Zhao
-  label: Ph.D. Student in Electrical Engineering, University of Notre Dame
-  email: gzhao23@nd.edu
-  location: Notre Dame, IN, United States
-  image: ""
-  summary: My research focuses on trustworthy and human-centered AI for healthcare, with an emphasis on developing intelligent conversational agents that provide reliable, personalized, and context-aware support in high-stakes care settings.
+name: Guangxin Zhao
+position: Ph.D. Student
+department: Electrical Engineering
+department_url: https://ee.nd.edu/
+institution: University of Notre Dame
+institution_url: https://www.nd.edu/
+email: gzhao23@nd.edu
 
-  social_networks:
-    - network: GitHub
-      username: Xavier-Z713
-    - network: LinkedIn
-      username: guangxin-zhao-811623389
+profile:
+  keywords: Trustworthy AI for Healthcare, Human-Centered AI, Conversational Agents, Large Language Models
+  summary: >-
+    My research focuses on trustworthy and human-centered AI for healthcare, with an emphasis on developing
+    intelligent conversational agents that provide reliable, personalized, and context-aware support in
+    high-stakes care settings.
 
-  sections:
-    Education:
-      - institution: University of Notre Dame
-        location: Notre Dame, IN, United States
-        url: https://www.nd.edu/
-        area: Electrical and Electronics Engineering
-        studyType: Ph.D.
-        start_date: 2025-08
-        highlights:
-          - "Advisor: Dr. Zhi Zheng"
+education:
+  - dates: Aug 2025 – Present
+    title: Ph.D. in Electrical and Electronics Engineering
+    org: University of Notre Dame
+    url: https://www.nd.edu/
+    location: Notre Dame, IN, USA
+    details:
+      - "Advisor: Dr. Zhi Zheng"
+  - dates: Mar 2026 – Present
+    title: Affiliated Researcher
+    org: Indiana University School of Medicine
+    url: https://medicine.iu.edu/
+    location: Indianapolis, IN, USA
+  - dates: Sep 2024 – Sep 2025
+    title: M.Sc. in Communications and Signal Processing (Distinction)
+    org: Imperial College London
+    url: https://www.imperial.ac.uk/
+    location: London, UK
+    details:
+      - "Advisor: Dr. Chen Qin"
+  - dates: Sep 2022 – Jun 2024
+    title: B.Eng. in Electronic and Electrical Engineering (First Class Honours)
+    org: University of Birmingham
+    url: https://www.birmingham.ac.uk/
+    location: Birmingham, UK
+    details:
+      - "GPA: 4.25/4.25"
+  - dates: Sep 2020 – Jun 2024
+    title: B.Eng. in Photoelectric Science and Engineering
+    org: University of Electronic Science and Technology of China (UESTC)
+    url: https://en.uestc.edu.cn/
+    location: Chengdu, China
+    details:
+      - "GPA: 3.85/4.00"
 
-      - institution: Imperial College London
-        location: London, United Kingdom
-        url: https://www.imperial.ac.uk/
-        area: Communications and Signal Processing
-        studyType: M.Sc. (Distinction)
-        start_date: 2024-09
-        end_date: 2025-09
-        highlights:
-          - "Advisor: Dr. Chen Qin"
+research:
+  - dates: Aug 2025 – Present
+    title: Graduate Research Assistant
+    org: Intelligent Interaction Research (I²R) Lab, University of Notre Dame
+    url: https://sites.google.com/view/iirl/home
+    location: Notre Dame, IN, USA
+    details:
+      - "Advisor: Dr. Zhi Zheng"
+    bullets:
+      - Developing agent-based conversational AI systems for dementia caregiver support, focusing on reliable response generation, personalized interaction, and context-aware assistance in healthcare settings.
+  - dates: Dec 2024 – Sep 2025
+    title: MSc Dissertation Researcher
+    org: Imperial College London
+    url: https://www.imperial.ac.uk/
+    location: London, UK
+    details:
+      - "Advisor: Dr. Chen Qin"
+    bullets:
+      - Developed a diffusion-model-based framework for blind multi-coil MRI reconstruction, jointly optimizing latent representations and unknown k-space sampling masks to recover high-quality images from undersampled MR measurements.
 
-      - institution: University of Birmingham
-        location: Birmingham, United Kingdom
-        url: https://www.birmingham.ac.uk/
-        area: Electronic and Electrical Engineering
-        studyType: B.Eng. (First Class Honours)
-        start_date: 2022-09
-        end_date: 2024-06
-        highlights:
-          - "GPA: 4.25/4.25"
+awards:
+  - dates: Jun 2022
+    title: UESTC Excellent Student Scholarship
+    org: University of Electronic Science and Technology of China
 
-      - institution: University of Electronic Science and Technology of China (UESTC)
-        location: Chengdu, China
-        url: https://en.uestc.edu.cn/
-        area: Photoelectric Science and Engineering
-        studyType: B.Eng.
-        start_date: 2020-09
-        end_date: 2024-06
-        highlights:
-          - "GPA: 3.85/4.00"
+presentations:
+  - label: O1
+    year: 2026
+    title: Blind Multi-coil MRI Reconstruction Through Joint Optimization with the Diffusion Model
+    authors: <strong>Guangxin Zhao</strong>, Xinzhe Luo, Mary-Brenda Akoda, Jan Sedlacik, and Chen Qin
+    venue: Oral presentation at the 2026 International Conference on Pattern Recognition (ICPR)
 
-    Experience:
-      - company: The Intelligent Interaction Research (I²R) Lab, University of Notre Dame
-        position: Graduate Research Assistant (Advisor - Dr. Zhi Zheng)
-        location: Notre Dame, IN, United States
-        start_date: 2025-08
-        summary: Developing agent-based conversational AI systems for dementia caregiver support, focusing on reliable response generation, personalized interaction, and context-aware assistance in healthcare settings.
+work:
+  - dates: Jun 2023 – Jul 2023
+    title: Research Assistant Intern
+    org: SCLEAD
+    bullets:
+      - Fine-tuned a CycleMorph model on simulated and real astronomical images by optimizing model parameters.
+      - Evaluated registration/reconstruction performance using SSIM and MSE to assess accuracy and generalization.
 
-      - company: Indiana University School of Medicine
-        position: Affiliated Researcher
-        location: Indianapolis, IN, United States
-        start_date: 2026-03
-
-      - company: Imperial College London
-        position: MSc Dissertation Researcher (Advisor - Dr. Chen Qin)
-        location: London, United Kingdom
-        start_date: 2024-12
-        end_date: 2025-09
-        summary: Developed a diffusion-model-based framework for blind multi-coil MRI reconstruction, jointly optimizing latent representations and unknown k-space sampling masks to recover high-quality images from undersampled MR measurements.
-
-      - company: SCLEAD
-        position: Research Assistant Intern
-        start_date: 2023-06
-        end_date: 2023-07
-        highlights:
-          - Fine-tuned a CycleMorph model on simulated and real astronomical images by optimizing model parameters.
-          - Evaluated registration/reconstruction performance using SSIM and MSE to assess accuracy and generalization.
-
-    Honors and Awards:
-      - title: UESTC Excellent Student Scholarship
-        date: 2022-06
-        awarder: University of Electronic Science and Technology of China
-
-    Conference Presentations:
-      - bullet: "**[Oral]** Blind Multi-coil MRI Reconstruction Through Joint Optimization with the Diffusion Model. *2026 International Conference on Pattern Recognition (ICPR)*."
-
-    Academic Service:
-      - label: Journal Reviewer
-        details: IEEE Journal of Biomedical and Health Informatics (JBHI)
-      - label: Conference Reviewer
-        details: IEEE RO-MAN 2026; ACL Rolling Review (ARR), May 2026 Cycle
+service:
+  - title: Journal Reviewer
+    details: IEEE Journal of Biomedical and Health Informatics (JBHI)
+  - title: Conference Reviewer
+    details: IEEE RO-MAN 2026; ACL Rolling Review (ARR), May 2026 Cycle

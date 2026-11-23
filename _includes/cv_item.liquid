@@ -1,0 +1,23 @@
+{% assign item = include.item %}
+<div class="cvx-item">
+  <div class="cvx-date">{{ item.dates }}</div>
+  <div>
+    <div class="cvx-title">{{ item.title }}</div>
+    {% if item.org %}
+      <div class="cvx-org">
+        {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="external nofollow noopener">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}
+        {% if item.location %} · {{ item.location }}{% endif %}
+      </div>
+    {% endif %}
+    {% for d in item.details %}
+      <div class="cvx-detail">{{ d }}</div>
+    {% endfor %}
+    {% if item.bullets %}
+      <ul>
+        {% for b in item.bullets %}
+          <li>{{ b }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

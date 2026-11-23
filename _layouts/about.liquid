@@ -21,19 +21,31 @@ layout: default
   .profile .more-info a {
     text-decoration-skip-ink: none;
   }
+  .profile .more-info p {
+    display: block;
+  }
+  @media (min-width: 576px) {
+    .profile {
+      width: clamp(200px, 22%, 260px);
+    }
+  }
+  @media (max-width: 575px) {
+    .post > article {
+      display: flex;
+      flex-direction: column;
+    }
+    .post > article > .post-header {
+      order: -1;
+    }
+    .post > article > .profile {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
 </style>
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
   <article>
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
@@ -74,6 +86,17 @@ layout: default
         {% endif %}
       </div>
     {% endif %}
+
+    <header class="post-header">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </header>
 
     <div class="clearfix">{{ content }}</div>
 

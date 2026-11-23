@@ -1,0 +1,225 @@
+---
+layout: default
+---
+{% assign cv = site.data.cv %}
+<style>
+  .cvx {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 3rem;
+    margin-top: 1.5rem;
+  }
+  .cvx-side {
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .cvx-side .cvx-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .cvx-side .cvx-block {
+    margin-bottom: 1.75rem;
+  }
+  .cvx-side h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .cvx-side .cvx-toc a {
+    display: block;
+    color: var(--global-text-color);
+    padding: 0.15rem 0;
+  }
+  .cvx-side .cvx-toc a:hover,
+  .cvx-side .cvx-links a:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+  .cvx-side .cvx-links a {
+    display: block;
+    color: var(--global-theme-color);
+  }
+  .cvx-section {
+    margin-bottom: 2.5rem;
+    scroll-margin-top: 5rem;
+  }
+  .cvx-section > h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .cvx-sub {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin: 1.25rem 0 0.9rem;
+  }
+  .cvx-item {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .cvx-date {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    padding-top: 0.15rem;
+  }
+  .cvx-title {
+    font-weight: 600;
+  }
+  .cvx-org,
+  .cvx-org a {
+    color: var(--global-theme-color);
+  }
+  .cvx-detail {
+    font-size: 0.92rem;
+  }
+  .cvx-item ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.92rem;
+  }
+  .cvx-links-inline a {
+    font-size: 0.85rem;
+    margin-right: 0.75rem;
+  }
+  .cvx ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media (max-width: 767px) {
+    .cvx {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+    .cvx-side {
+      position: static;
+      order: -1;
+    }
+    .cvx-side .cvx-toc-block {
+      display: none;
+    }
+    .cvx-item {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.15rem;
+    }
+  }
+</style>
+
+
+<div class="cvx">
+  <div class="cvx-main">
+    <section class="cvx-section" id="profile">
+      <h2>Research Interests</h2>
+      <p><strong>Keywords:</strong> {{ cv.profile.keywords }}</p>
+      <p>{{ cv.profile.summary }}</p>
+    </section>
+
+    <section class="cvx-section" id="education">
+      <h2>Education &amp; Academic Affiliations</h2>
+      {% for item in cv.education %}
+        {% include cv_item.liquid item=item %}
+      {% endfor %}
+    </section>
+
+    <section class="cvx-section" id="research">
+      <h2>Research Experience</h2>
+      {% for item in cv.research %}
+        {% include cv_item.liquid item=item %}
+      {% endfor %}
+    </section>
+
+    <section class="cvx-section" id="awards">
+      <h2>Honors &amp; Awards</h2>
+      {% for item in cv.awards %}
+        {% include cv_item.liquid item=item %}
+      {% endfor %}
+    </section>
+
+    <section class="cvx-section" id="publications">
+      <h2>Publications</h2>
+      <div class="cvx-sub">Peer-Reviewed Journal Papers</div>
+      {% bibliography --template cv_bib --group_by none --query @article %}
+      <div class="cvx-sub">Peer-Reviewed Conference Proceedings</div>
+      {% bibliography --template cv_bib --group_by none --query @inproceedings %}
+      <div class="cvx-sub">Other Publications</div>
+      {% bibliography --template cv_bib --group_by none --query @misc %}
+    </section>
+
+    <section class="cvx-section" id="presentations">
+      <h2>Conference Presentations</h2>
+      {% for p in cv.presentations %}
+        <div class="cvx-item">
+          <div class="cvx-date">{{ p.label }}<br>{{ p.year }}</div>
+          <div>
+            <div class="cvx-title">{{ p.title }}</div>
+            <div class="cvx-detail">{{ p.authors }}</div>
+            <div class="cvx-detail"><em>{{ p.venue }}</em></div>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+
+    <section class="cvx-section" id="work">
+      <h2>Work Experience</h2>
+      {% for item in cv.work %}
+        {% include cv_item.liquid item=item %}
+      {% endfor %}
+    </section>
+
+    <section class="cvx-section" id="service">
+      <h2>Academic Service</h2>
+      {% for s in cv.service %}
+        <div class="cvx-item">
+          <div class="cvx-date">Peer Review</div>
+          <div>
+            <div class="cvx-title">{{ s.title }}</div>
+            <div class="cvx-detail">{{ s.details }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+  </div>
+
+  <aside class="cvx-side">
+    <div class="cvx-block">
+      <div class="cvx-name">{{ cv.name }}</div>
+      <div>{{ cv.position }}</div>
+      <div class="cvx-org"><a href="{{ cv.department_url }}">{{ cv.department }}</a></div>
+      <div class="cvx-org"><a href="{{ cv.institution_url }}">{{ cv.institution }}</a></div>
+    </div>
+    <div class="cvx-block cvx-links">
+      <a href="{{ page.cv_pdf | relative_url }}" target="_blank">↓ Download PDF</a>
+      <a href="{{ '/' | relative_url }}">← Back to Home</a>
+      <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="external nofollow noopener">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" target="_blank" rel="external nofollow noopener">LinkedIn</a>
+      <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
+    </div>
+    <div class="cvx-block cvx-toc-block">
+      <h4>On This Page</h4>
+      <nav class="cvx-toc">
+        <a href="#profile">Research Interests</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research Experience</a>
+        <a href="#awards">Honors &amp; Awards</a>
+        <a href="#publications">Publications</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#work">Work Experience</a>
+        <a href="#service">Service</a>
+      </nav>
+    </div>
+  </aside>
+</div>

@@ -102,7 +102,7 @@ posts_in_search: true
 bib_search: false
 
 # Dimensions
-max_width: 930px
+max_width: 1300px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -401,6 +401,7 @@ filtered_bibtex_keywords:
     pmid,
     poster,
     preview,
+    cvlabel,
     selected,
     slides,
     supp,
@@ -535,7 +536,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
